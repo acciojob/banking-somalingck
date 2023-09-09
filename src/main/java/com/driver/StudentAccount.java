@@ -1,7 +1,7 @@
 package com.driver;
 
 public class StudentAccount extends BankAccount {
-    private final String institutionName;
+     String institutionName;
 
     public StudentAccount(String name, double balance, String institutionName) {
         super(name, balance, 0);
@@ -12,5 +12,8 @@ public class StudentAccount extends BankAccount {
         return institutionName;
     }
 
-    // You can use 'institutionName' in other methods as well
+    public void setInstitutionName(String institutionName) {
+        this.institutionName = institutionName;
+    }
+// You can use 'institutionName' in other methods as well
 }
